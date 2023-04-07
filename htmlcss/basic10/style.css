@@ -1,0 +1,66 @@
+@charset "UTF-8";
+*{margin: 0;padding: 0;}
+.약::after{content: ""; clear: both; display: block;}
+
+body{
+    padding: 50px;
+}
+
+.parent1{
+    background-image:url(https://img.freepik.com/premium-vector/square-grid-paper-seamless-pattern-millimeter-paper-sheet-background_434359-268.jpg?w=2000);
+    width: 500px;
+    height: 500px;
+}
+.parent1 .child{
+    width: 100px;
+    height: 100px;
+    background-color: blanchedalmond;
+    color:burlywood;
+    text-align: center;
+    line-height: 100px;
+    left: 100px;
+    top: 100px;
+    position: relative;/* <-이 친구가 있어야 움직임! */
+    /* 글자가 두 줄 이상이면 position: absolute; 사용*/
+}
+.parent1 .child2{
+    width: 100px;
+    height: 100px;
+    background-color:burlywood;
+    color:beige;
+    text-align: center;
+    line-height: 100px;
+}
+
+.parent2{
+    position: relative;
+    margin-top: 30px;
+    width: 90%;
+    height: 600px;
+    border: 1px solid gray;
+}
+.parent2 .child{
+    width: 600px;
+    height: 400px;
+    background-color:burlywood;
+    position: absolute; /*위치값을 정해줘야댐 */
+    left: 50%;        /* <- 위치값 */
+    top: 50%;
+    transform: translate(-50%,-50%); /* %는 자신이 기준 */
+}
+
+.parent2 .child iframe{
+    width: 600px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+
+.parent3{}
+.parent3 .child{}
+
+.parent4{}
+.parent4 .child{}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이름부르기</title>
+    <style>
+        div{
+            color: brown;   /* 글자색 */
+        }
+
+        .three{
+            color: blue;
+        }
+        .딸{background-color:blanchedalmond;}
+ 
+        #two{color: cornflowerblue;}
+        #아들{background-color: aqua;}
+        /*  또는
+
+            div:nth-child(3){
+            color:blue;
+        }*/
+
+    </style>
+</head>
+<body>
+
+    <!--<시작태그></종료태그> 
+        <열린태그></닫힌태그>-->
+
+        <!-- 이름부르기
+        * class="이름명" 이름을 2개 이상 만들 수 있음
+                 다른태그에서 중복하여 붙일 수 있음
+
+        * id="유일한 이름" 이름을 2개 이상 만들 수 없음
+              다른태그와 중복하여 사용할 수 없음 
+              사이트 전체에서 유일한 이름-->
+
+
+        <div class="first 딸">영역입니다.1</div>
+        <div id="two">영역입니다.2</div>
+        <div class="three 딸">영역입니다.3</div>
+        <div id="아들">영역입니다.4</div>
+</body>
+</html>

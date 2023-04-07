@@ -1,0 +1,101 @@
+@charset "UTF-8";
+*{margin: 0;padding: 0;}
+.약::after{content: ""; clear: both; display: block;}
+
+.아빠{
+    width: 1000px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: aquamarine;
+}
+
+.철수>div{
+    background-color: antiquewhite;
+    width: 32%;
+    float: left;
+    height: 150px;
+    margin-right: 2%;
+    line-height: 150px;
+    text-align: center;
+}
+
+.철수>div:last-child{
+    margin-right: 0;
+}
+
+.철수 .자식1{
+    background-image: url(https://img.megabox.co.kr/SharedImg/2023/04/02/0Io7xsImBXNca6uBXS8Y02nkbxtnl7NB_420.jpg);
+    background-size: auto;
+    position: relative;
+}
+
+.철수 .자식1 .cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:dimgrey;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.철수 .자식1:hover .cover{
+    opacity: 1;
+}
+
+.철수 .자식2{
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background-image: url(https://img.megabox.co.kr/SharedImg/2023/03/08/WZlUclJF2y6VcnWV7VgyEpiKVzsuoSdB_380.jpg);
+}
+
+.철수 .자식2 .cover{
+    position: absolute;
+    left: 50%;
+    bottom: -50%;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.5);
+    transform: translateX(-50%);
+    color: #fff;
+    line-height: 50px;
+    transition: 0.4s;
+}
+
+.철수 .자식2:hover .cover{
+    bottom: 0;
+}
+
+.철수 .자식3{
+    position: relative;
+}
+.철수 .자식3 .cover{
+    position: absolute;
+    width: 100%;height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    line-height: 1.3;
+    border: 1px solid red;
+}
+
+.철수 .자식3 .cover .영화{
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    padding: 5px 10px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 20px;
+}
+
+.철수 .자식3 .cover video{
+    width: 100%;
+}
